@@ -49,24 +49,24 @@ function saveAnswer(newAnswer){
 function submitAnswer(){
     if (random1 > random2 && answer == ">" ){
         pointsUpdate();
-        correctDiv.innerHTML = "Korrekt";
+        correctDiv.innerHTML = "Correct";
         randomNumber();
         inputDiv.value = "";
     }
     else if (random1 < random2 && answer == "<" ){
         pointsUpdate();
-        correctDiv.innerHTML = "Korrekt";
+        correctDiv.innerHTML = "Correct";
         randomNumber();
          inputDiv.value = "";
     }
     else if (random1 == random2 && answer == "=" ){
         pointsUpdate();
-        correctDiv.innerHTML = "Korrekt";
+        correctDiv.innerHTML = "Correct";
         randomNumber();
          inputDiv.value = "";
     }
     else {
-        correctDiv.innerHTML = "Feil";
+        correctDiv.innerHTML = "Wrong";
         randomNumber();
          inputDiv.value = "";
     }
